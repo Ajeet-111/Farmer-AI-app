@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputs.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(252, 245, 245);
+        }
+
+        .box {
+            border: 2px solid black;
+            border-radius: 20px;
+            box-shadow: 5px 5px 30px rgb(7, 7, 7);
+            background-color: rgb(250, 251, 251);
+            height: 60vh;
+            width: 17vw;
+            align-items: center;
+            /* justify-content: center; */
+            text-align: center;
+            margin-left: 40vw;
+            margin-top: 5vh;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        .n,
+        .p,
+        .l,
+        .t,
+        .ph,
+        .h,
+        .r {
+            margin: 10px;
+
+        }
+
+        h3 {
+            margin: 20px;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        a {
+            border: 1px solid black;
+            position: relative;
+            top: 15vh;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: #0cbefa;
+            text-decoration: none;
+            border-radius: 25px;
+            border-style: none;
+            color: white;
+            box-shadow: 0.5px 0.5px 3px black;
+        }
+
+        a:hover {
+            background-color: #008CBA;
+            /* Blue */
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <h3>ENTER THE DETAILS:</h3>
+        <form action="{{ url_for('predict') }}" method="post"> 
+            <div class="n">
+                <h4><label for="N">Nitrogen:</label></h4>
+                <input type="text" name="N" id="N" placeholder="">
+            </div>
+            <p></p>
+            <div class="p">
+                <h4><label for="P">Phosphorus: </label></h4>
+                <input type="text" name="P" id="p" placeholder="">
+            </div>
+
+            <div class="k">
+                <h4><label for="k">Potassium: </label></h4>
+                <input type="text" name="k" id="k" placeholder="">
+            </div>
+            <div class="t">
+                <h4><label for="t">Temperature: </label></h4>
+                <input type="text" name="t" id="t" placeholder="">
+            </div>
+            <div class="ph">
+                <h4><label for="ph">ph index: </label></h4>
+                <input type="text" name="ph" id="ph" placeholder="">
+            </div>
+            <div class="h">
+                <h4><label for="h">Humidity: </label></h4>
+                <input type="text" name="h" id="h" placeholder="">
+            </div>
+            <div class="r">
+                <h4><label for="r">Rainfall: </label></h4>
+                <input type="text" name="r" id="r" placeholder="">
+            </div>
+            <div class="submit">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>

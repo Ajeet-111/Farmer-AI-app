@@ -1,0 +1,16 @@
+this project helps farmers in finding their answers revovlving around the nature of soil, crops etc.
+web development is required for this project.
+1. front end.
+2. database
+3. backend using python.
+4. jupyter notebook.
+
+in unsupervised learning we use clustering by using algorithms.
+
+Algorithm:
+-> Kmeans = divides data in groups.
+
+
+backend
+-> API
+-> form action & method(post)

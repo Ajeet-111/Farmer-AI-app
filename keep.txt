@@ -1,0 +1,8 @@
+-> to retrive the data
+execute the data_retrive.py file
+
+-> to execute the application
+execute python app.py
+
+-> to create database and table
+execute python database.py
